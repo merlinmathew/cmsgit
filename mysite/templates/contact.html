@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="breadcrumb">
+					<li><a href="#"><i class="fa fa-home"></i></a><i class="icon-angle-right"></i></li>
+					<li class="active">Contact</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="content">
+	<div class="map">
+		<div id="google-map" data-latitude="10.0159" data-longitude="76.3419"></div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+			    <h2>Contact us <small>get in touch with us by filling form below</small></h2>
+			    <hr class="colorgraph">
+			    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <div class="form-group">
+                    <form method="post" id="contactfrm" action="{% url 'contact' %}">
+                    {% csrf_token %}
+{#                        {{ form.as_p }}#}
+                        <span>Name<div class="form-group">{{ form.contact_name }}<span class="error_contact_name"></span></div></span>
+
+                        <span>Email<div class="form-group">{{ form.contact_email }}<span class="error_contact_email"></span></div></span>
+
+                        <span>Message<div class="form-group">{{ form.message }}<span class="error_message"></span></div></span>
+
+                        <div class="text-center"><button id="contactbtn" type="button" class="btn btn-theme btn-block btn-md" >SEND</button> </div>
+                        {% if messages %}
+                        <ul class="messages">
+                            {% for message in messages %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                    </form>
+
+
+                </div>
+                <hr class="colorgraph">
+
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock content %}
+{% block script %}
+<script>
+$(document).ready(function() {
+    $('#contactbtn').click(function(e){
+        e.preventDefault();
+        $(this).text("Sending....")
+        $(this).attr('disabled', true)
+
+        form = $('#contactfrm');
+        var data = form.serialize()
+        $.ajax({
+        type: "post",
+        data: data,
+        url: form.attr("action"),
+        success: function (data) {
+            var d = JSON.parse(data)
+            console.log(d['status'])
+
+            if(d['status']=="success"){
+               alert('Successfully submitted!!')
+               form[0].reset();
+
+            }
+            if(d['status']=="failed"){
+                for(i in d['data']){
+                $('.error_'+ i).text(d['data'][i][0])
+
+            }
+            }
+            $('#contactbtn').removeAttr('disabled')
+            $('#contactbtn').text("SEND")
+        }
+        });
+    });
+
+});
+
+</script>
+
+{% endblock script %}

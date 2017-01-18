@@ -1,0 +1,337 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load cms_tags %}
+{% block content %}
+
+
+    <div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-sm-6 col-lg-6">
+						<h4>About our company</h4>
+                        {% placeholder npl_about %}
+					</div>
+
+					<div class="col-sm-6 col-lg-6">
+						<h4>Projects</h4>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+							40% Complete (success)
+						  </div>
+						</div>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+							20% Complete
+						  </div>
+						</div>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+							60% Complete (warning)
+						  </div>
+						</div>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							80% Complete
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="box">
+							<div class="aligncenter">
+								<div class="icon">
+								<i class="fa fa-desktop fa-5x"></i>
+								</div>
+								<h4>Dedication to monitor </h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="box">
+							<div class="aligncenter">
+								<div class="icon">
+								<i class="fa fa-file-code-o fa-5x"></i>
+								</div>
+								<h4>Affectionate coding</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="box">
+							<div class="aligncenter">
+								<div class="icon">
+								<i class="fa fa-paper-plane-o fa-5x"></i>
+								</div>
+								<h4>On time delivery</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-3 col-lg-3">
+						<div class="box">
+							<div class="aligncenter">
+								<div class="icon">
+								<i class="fa fa-cubes fa-5x"></i>
+								</div>
+								<h4>Highly systematic</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- divider -->
+{#		<div class="container">#}
+{#		<div class="row">#}
+{#			<div class="col-lg-12">#}
+{#				<div class="solidline">#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>#}
+{#		</div>#}
+{#		<!-- end divider -->#}
+{##}
+{##}
+{#		<!-- divider -->#}
+{#		<div class="container">#}
+{#		<div class="row">#}
+{#			<div class="col-lg-12">#}
+{#				<div class="blankline">#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>#}
+{#		</div>#}
+		<!-- end divider -->
+
+	<!-- parallax  -->
+{#		<div id="parallax1" class="parallax text-light text-center marginbot50" data-stellar-background-ratio="0.5">#}
+{#           <div class="container">#}
+{#				<div class="row appear stats">#}
+{#					<div class="col-xs-6 col-sm-3 col-md-3">#}
+{#						<div class="align-center color-white txt-shadow">#}
+{#							<div class="icon">#}
+{#								<i class="fa fa-clock-o fa-5x"></i>#}
+{#							</div>#}
+{#						<strong id="counter-coffee" class="number">6</strong><br />#}
+{#						<span class="text">Years of Experience</span>#}
+{#						</div>#}
+{#					</div>#}
+{#					<div class="col-xs-6 col-sm-3 col-md-3">#}
+{#						<div class="align-center color-white txt-shadow">#}
+{#							<div class="icon">#}
+{#								<i class="fa fa-music fa-5x"></i>#}
+{#							</div>#}
+{#						<strong id="counter-music" class="number">71</strong><br />#}
+{#						<span class="text">In the Family</span>#}
+{#						</div>#}
+{#					</div>#}
+{#					<div class="col-xs-6 col-sm-3 col-md-3">#}
+{#						<div class="align-center color-white txt-shadow">#}
+{#							<div class="icon">#}
+{#								<i class="fa fa-coffee fa-5x"></i>#}
+{#							</div>#}
+{#						<strong id="counter-clock" class="number">301</strong><br />#}
+{#						<span class="text">Projects</span>#}
+{#						</div>#}
+{#					</div>#}
+{#					<div class="col-xs-6 col-sm-3 col-md-3">#}
+{#						<div class="align-center color-white txt-shadow">#}
+{#							<div class="icon">#}
+{#								<i class="fa fa-trophy fa-5x"></i>#}
+{#							</div>#}
+{#						<strong id="counter-heart" class="number">61</strong><br />#}
+{#						<span class="text">Clients</span>#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#            </div>#}
+{#	    </div>#}
+
+{#		<div class="container">#}
+{#		<div class="row">#}
+{#			<div class="col-lg-12">#}
+{#				<div class="row">#}
+{#					<div class="col-sm-6 col-md-6">#}
+{#					<h4>Testimonials</h4>#}
+{#						<div class="testimonialslide clearfix flexslider">#}
+{#							<ul class="slides">#}
+{#								<li><blockquote>#}
+{#								Sailor Techs is extremely flexible from a project management standpoint and that's really important to our unique business environment.#}
+{#									</blockquote>#}
+{#									<h4>Daniel Dan <span>&#8213; MA System</span></h4>#}
+{#								</li>#}
+{#								<li><blockquote>#}
+{#								 Sailor Techs communicated very well to understand the requirements for our web scraping job and kept us up to date with progress and expected times to complete. Their work was very high quality and I recommend them!#}
+{#									</blockquote>#}
+{#									<h4>Mark Wellbeck <span>&#8213; AC Software </span></h4>#}
+{#								</li>#}
+{#							</ul>#}
+{#						</div>#}
+{#					</div>#}
+{##}
+{#				</div>#}
+{#			</div>#}
+{#		</div>#}
+{#		</div>#}
+{#        <div class="container">#}
+{#		<div class="row">#}
+{#			<div class="col-lg-12">#}
+{#				<div class="solidline">#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>#}
+{#		</div>#}
+		<!-- end divider -->
+
+		<!-- Portfolio Projects -->
+
+	    <section id="content">
+		<div class="container marginbot50">
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Recent Works</h4>
+
+{#				<div id="filters-container" class="cbp-l-filters-button">#}
+{#					<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All<div class="cbp-filter-counter"></div></div>#}
+{#					<div data-filter=".identity" class="cbp-filter-item">Identity<div class="cbp-filter-counter"></div></div>#}
+{#					<div data-filter=".web-design" class="cbp-filter-item">Web Design<div class="cbp-filter-counter"></div></div>#}
+{#					<div data-filter=".graphic" class="cbp-filter-item">Graphic<div class="cbp-filter-counter"></div></div>#}
+{#					<div data-filter=".logo" class="cbp-filter-item">Logo<div class="cbp-filter-counter"></div></div>#}
+{#				</div>#}
+
+
+				<div id="grid-container" class="cbp-l-grid-projects">
+					<ul>
+						<li class="cbp-item graphic">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="{% static 'img/works/1.jpg' %}" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<a href="{% static 'img/works/1big.jpg' %}" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Dashboard</div>
+							<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+						</li>
+						<li class="cbp-item web-design logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="{% static 'img/works/2.jpg' %}" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+											<a href="{% static 'img/works/2big.jpg' %}" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">World Clock Widget</div>
+							<div class="cbp-l-grid-projects-desc">Logo / Web Design</div>
+						</li>
+						<li class="cbp-item graphic logo">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="{% static 'img/works/3.jpg' %}" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+
+											<a href="http://vimeo.com/14912890" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="To-Do Dashboard<br>by Tiberiu Neamu">view video</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">To-Do Dashboard</div>
+							<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+						</li>
+						<li class="cbp-item web-design graphic">
+							<div class="cbp-caption">
+								<div class="cbp-caption-defaultWrap">
+									<img src="{% static 'img/works/4.jpg' %}" alt="" />
+								</div>
+								<div class="cbp-caption-activeWrap">
+									<div class="cbp-l-caption-alignCenter">
+										<div class="cbp-l-caption-body">
+
+											<a href="{% static 'img/works/4big.jpg' %}" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cbp-l-grid-projects-title">Events and More</div>
+							<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+						</li>
+
+					</ul>
+				</div>
+
+{#				<div class="cbp-l-loadMore-button">#}
+{#					<a href="{% static 'ajax/loadMore.html' %}" class="cbp-l-loadMore-button-link">LOAD MORE</a>#}
+{#				</div>#}
+
+			</div>
+		</div>
+		</div>
+
+
+		<!-- divider -->
+{#		<div class="container">#}
+{#		<div class="row">#}
+{#			<div class="col-lg-12">#}
+{#				<div class="solidline">#}
+{#				</div>#}
+{#			</div>#}
+{#		</div>#}
+{#		</div>#}
+		<!-- end divider -->
+
+		<!-- clients -->
+		<div class="container">
+				<div class="row">
+								<div class="col-xs-6 col-md-2 aligncenter client">
+									<img alt="logo" src="{% static 'img/clients/logo1.png' %}" class="img-responsive" />
+								</div>
+
+								<div class="col-xs-6 col-md-2 aligncenter client">
+									<img alt="logo" src="{% static 'img/clients/logo2.png' %}" class="img-responsive" />
+								</div>
+
+								<div class="col-xs-6 col-md-2 aligncenter client">
+									<img alt="logo" src="{% static 'img/clients/logo3.png' %}" class="img-responsive" />
+								</div>
+
+								<div class="col-xs-6 col-md-2 aligncenter client">
+									<img alt="logo" src="{% static 'img/clients/logo4.png' %}" class="img-responsive" />
+								</div>
+
+								<div class="col-xs-6 col-md-2 aligncenter client">
+									<img alt="logo" src="{%static 'img/clients/logo5.png' %} " class="img-responsive" />
+								</div>
+								<div class="col-xs-6 col-md-2 aligncenter client">
+									<img alt="logo" src="{% static 'img/clients/logo6.png'%}" class="img-responsive" />
+								</div>
+
+				</div>
+		</div>
+
+	    </section>
+
+{% endblock content %}

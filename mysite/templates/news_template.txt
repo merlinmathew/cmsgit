@@ -1,0 +1,4 @@
+Thanks for subscribing,we will forward our blog updates on ur mail address :)
+
+Click on the link below and confirm :
+   http://127.0.0.1:8000/en/home/

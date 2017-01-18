@@ -1,0 +1,149 @@
+
+    {% extends "base.html" %}
+    {% load staticfiles %}
+    {% load cms_tags %}
+    {% block content %}
+	<!-- end header -->
+	<section id="featured" class="bg">
+	<!-- start slider -->
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+	<!-- Slider -->
+        <div id="main-slider" class="main-slider flexslider">
+            <ul class="slides">
+              {% placeholder Banner %}
+            </ul>
+        </div>
+	<!-- end slider -->
+			</div>
+		</div>
+	</div>
+    </section>
+
+	<section class="callaction">
+	<div class="container">
+		<div class="row">
+							<div class="col-lg-8">
+								<div class="cta-text">
+									{% placeholder text1 %}
+								</div>
+							</div>
+		</div>
+	</div>
+	</section>
+
+	<section id="content">
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="text-center">
+					{% placeholder text2 %}
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+                 <div class="row">
+                    {% placeholder midlogos %}
+                 </div>
+			</div>
+		</div>
+		</div>
+
+		<!-- divider -->
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- end divider -->
+
+		<!-- divider -->
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="blankline">
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- end divider -->
+
+	<!-- parallax  -->
+               {% placeholder mid %}
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-sm-6 col-md-6">
+					<h4>Testimonials</h4>
+					    <div class="testimonialslide clearfix flexslider">
+                            <ul class="slides">
+                                {% placeholder testimonial %}
+                            </ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- divider -->
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- end divider -->
+
+		<!-- Portfolio Projects -->
+		<div class="container marginbot50">
+		<div class="row">
+			<div class="col-lg-12">
+				<h4 class="heading">Recent Works</h4>
+
+
+				<div id="grid-container" class="cbp-l-grid-projects">
+                    <ul>
+                        {% placeholder recentworks %}
+                    </ul>
+				</div>
+
+			</div>
+		</div>
+		</div>
+
+
+		<!-- divider -->
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- end divider -->
+
+		<!-- clients -->
+		<div class="container">
+				<div class="row">
+								{% placeholder bottomlogos %}
+				</div>
+		</div>
+
+	</section>
+
+	{% endblock content %}
