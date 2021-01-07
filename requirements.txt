@@ -35,7 +35,7 @@ html5lib==0.999
 httplib2==0.8
 Jinja2==2.8
 lockfile==0.8
-lxml==3.3.3
+lxml==4.6.2
 M2Crypto==0.21.1
 MarkupSafe==0.23
 models==0.9.3
