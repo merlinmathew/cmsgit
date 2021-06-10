@@ -28,7 +28,7 @@ command-not-found==0.3
 debtagshw==0.1
 defer==1.0.6
 dirspec==13.10
-Django==1.10.3
+Django==2.2.24
 duplicity==0.6.23
 fields==5.0.0
 html5lib==0.999
